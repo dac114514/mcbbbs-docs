@@ -1,0 +1,1333 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MCBBBS 粘液生存服务器玩家手册与粘液科技扩展玩法指南">
+      
+      
+      
+        <link rel="canonical" href="https://bbbs.yunci.net/slimefun-addons/">
+      
+      
+        <link rel="prev" href="../updates/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>粘液科技扩展 - MCBBBS 玩家百科</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="MCBBBS 玩家百科" class="md-header__button md-logo" aria-label="MCBBBS 玩家百科" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MCBBBS 玩家百科
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              粘液科技扩展
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dac114514/mcbbbs-docs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dac114514/mcbbbs-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MCBBBS 玩家百科" class="md-nav__button md-logo" aria-label="MCBBBS 玩家百科" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MCBBBS 玩家百科
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dac114514/mcbbbs-docs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dac114514/mcbbbs-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    玩家手册
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recycle-prices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回收商店价目表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../updates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    更新日志
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    粘液科技扩展
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    粘液科技扩展
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ecopower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        能源 · 生态能源｜EcoPower
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="能源 · 生态能源｜EcoPower">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心玩法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心玩法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心玩法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#风力发电" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        风力发电
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#蒸汽发电" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蒸汽发电
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#雷电能源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雷电能源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#混合电网" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        混合电网
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#玩家入门步骤" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        玩家入门步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluffy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生产 · 蓬松机器｜FluffyMachines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生产 · 蓬松机器｜FluffyMachines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主要机器与用途" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要机器与用途
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#如何搭建第一条自动生产线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何搭建第一条自动生产线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#其他便利内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他便利内容
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        仓储 · 网络化存储｜Networks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仓储 · 网络化存储｜Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#网络由什么组成" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络由什么组成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="网络由什么组成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#网络核心与控制部件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络核心与控制部件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#存储单元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        存储单元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#访问终端" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        访问终端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#导入与导出节点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        导入与导出节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#基础搭建流程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基础搭建流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与货运系统的区别" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与货运系统的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#route" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        推荐发展路线
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ecopower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        能源 · 生态能源｜EcoPower
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="能源 · 生态能源｜EcoPower">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心玩法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心玩法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心玩法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#风力发电" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        风力发电
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#蒸汽发电" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蒸汽发电
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#雷电能源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        雷电能源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#混合电网" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        混合电网
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#玩家入门步骤" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        玩家入门步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluffy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生产 · 蓬松机器｜FluffyMachines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生产 · 蓬松机器｜FluffyMachines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主要机器与用途" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要机器与用途
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#如何搭建第一条自动生产线" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何搭建第一条自动生产线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#其他便利内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他便利内容
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        仓储 · 网络化存储｜Networks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="仓储 · 网络化存储｜Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#网络由什么组成" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络由什么组成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="网络由什么组成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#网络核心与控制部件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络核心与控制部件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#存储单元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        存储单元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#访问终端" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        访问终端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#导入与导出节点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        导入与导出节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#基础搭建流程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基础搭建流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与货运系统的区别" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与货运系统的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#route" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        推荐发展路线
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="overview">粘液科技扩展玩法指南<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>本页介绍服务器的粘液科技的三项扩展：生态能源、蓬松机器与网络化存储。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>能源</td>
+<td>EcoPower 生态能源</td>
+</tr>
+<tr>
+<td>生产</td>
+<td>FluffyMachines 蓬松机器</td>
+</tr>
+<tr>
+<td>仓储</td>
+<td>Networks 网络化存储</td>
+</tr>
+<tr>
+<td>适合阶段</td>
+<td>粘液科技中期至后期</td>
+</tr>
+<tr>
+<td>主要目标</td>
+<td>建设完整科技工业体系</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">重要说明</p>
+<p>所有具体配方、耗电量、机器速度、多方块结构和可到达天体，
+均以服务器当前版本的粘液科技指南为准。外部 Wiki 主要用于理解机制，
+部分旧页面可能与服务器实际版本存在差异。</p>
+</div>
+<h2 id="ecopower">能源 · 生态能源｜EcoPower<a class="headerlink" href="#ecopower" title="Permanent link">&para;</a></h2>
+<p>EcoPower 用于扩充粘液科技的发电体系。它让玩家不再只依赖燃烧燃料或单一太阳能设备，
+而是根据基地环境建设风力、蒸汽和天气相关能源设施。</p>
+<h3 id="核心玩法">核心玩法<a class="headerlink" href="#核心玩法" title="Permanent link">&para;</a></h3>
+<h4 id="风力发电">风力发电<a class="headerlink" href="#风力发电" title="Permanent link">&para;</a></h4>
+<p>利用风力设备持续产生电力，适合建设在开阔区域或作为基地的长期基础电源。</p>
+<h4 id="蒸汽发电">蒸汽发电<a class="headerlink" href="#蒸汽发电" title="Permanent link">&para;</a></h4>
+<p>通过热能与蒸汽体系发电，适合与工业区统一规划，形成较稳定的集中供电设施。</p>
+<h4 id="雷电能源">雷电能源<a class="headerlink" href="#雷电能源" title="Permanent link">&para;</a></h4>
+<p>利用雷雨天气收集能量。产能具有环境条件，适合与其他电源搭配，而不是作为唯一电源。</p>
+<h4 id="混合电网">混合电网<a class="headerlink" href="#混合电网" title="Permanent link">&para;</a></h4>
+<p>将多种发电机接入电容与能源网络，在天气、时间或负载变化时保持工厂持续运行。</p>
+<h3 id="玩家入门步骤">玩家入门步骤<a class="headerlink" href="#玩家入门步骤" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>确认用电规模。</strong> 先计算当前机器数量，避免只造发电机却没有足够储电能力。</li>
+<li><strong>选择合适能源。</strong> 开阔基地可优先考虑风力；工业基地可考虑蒸汽；雷电设备作为补充。</li>
+<li><strong>配置电容。</strong> 发电量会随条件变化，电容可以储存富余电力并缓冲短时缺电。</li>
+<li><strong>建立分区电网。</strong> 建议将农业、矿物加工、仓库和网络存储分成不同用电区域。</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">推荐用途</p>
+<p>为蓬松机器的自动生产线以及 Networks 网络节点提供长期电力。</p>
+</div>
+<p><strong>资料入口</strong></p>
+<ul>
+<li><a href="https://github.com/TheBusyBiscuit/EcoPower">英文项目仓库：EcoPower GitHub</a></li>
+<li><a href="https://github.com/Slimefun/Slimefun4/wiki/Addons">英文官方列表：Slimefun Addons</a></li>
+<li>鬼斩中文 Wiki：目前未发现独立的 EcoPower 专题页，请优先查看游戏内指南。</li>
+</ul>
+<h2 id="fluffy">生产 · 蓬松机器｜FluffyMachines<a class="headerlink" href="#fluffy" title="Permanent link">&para;</a></h2>
+<p>FluffyMachines 是一套偏实用型的自动化扩展。它把原本需要玩家反复手动完成的工作台、
+魔法工作台、盔甲锻造炉、远古祭坛和台锯操作，转换为可以接入电力和物流的自动生产流程。</p>
+<h3 id="主要机器与用途">主要机器与用途<a class="headerlink" href="#主要机器与用途" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>用途</th>
+<th>典型应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自动工作台</td>
+<td>自动执行原版合成配方</td>
+<td>木板、木棍、箱子、活塞等基础物资流水线</td>
+</tr>
+<tr>
+<td>自动魔法工作台</td>
+<td>自动执行魔法工作台配方</td>
+<td>批量生产符文、护身符及魔法材料</td>
+</tr>
+<tr>
+<td>自动盔甲锻造炉</td>
+<td>自动执行盔甲锻造炉配方</td>
+<td>批量生产粘液科技护甲与相关部件</td>
+</tr>
+<tr>
+<td>自动远古祭坛</td>
+<td>将祭坛配方改为机器化生产</td>
+<td>减少反复摆放祭坛材料的操作</td>
+</tr>
+<tr>
+<td>自动台锯</td>
+<td>自动执行木材加工配方</td>
+<td>建筑材料批量生产</td>
+</tr>
+<tr>
+<td>粉尘制造与回收</td>
+<td>处理筛矿、粉尘与矿物中间产物</td>
+<td>矿物加工生产线与废料回收</td>
+</tr>
+<tr>
+<td>高级充电与便携充电</td>
+<td>为电力工具和装备补充电力</td>
+<td>矿场、远征和工厂维护</td>
+</tr>
+</tbody>
+</table>
+<h3 id="如何搭建第一条自动生产线">如何搭建第一条自动生产线<a class="headerlink" href="#如何搭建第一条自动生产线" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>发展路线：</strong> 原料箱 → 货运输出节点 → 自动机器 → 货运输入节点 → 成品箱或网络仓库</p>
+</blockquote>
+<ol>
+<li><strong>先选择单一成品。</strong> 建议从木板、木棍或常用部件开始，不要一开始就建设复杂总线。</li>
+<li><strong>为机器持续供电。</strong> 机器必须接入能源网络，电力不足会导致生产中断。</li>
+<li><strong>设置原料与成品方向。</strong> 使用粘液科技本体的货运节点输送物品。</li>
+<li><strong>逐步串联。</strong> 一台机器的成品可以成为下一台机器的原料，最终形成完整流水线。</li>
+</ol>
+<h3 id="其他便利内容">其他便利内容<a class="headerlink" href="#其他便利内容" title="Permanent link">&para;</a></h3>
+<ul>
+<li>洒水器和浇水壶：加快农作物或植物生长。</li>
+<li>镰刀：一次处理多株作物。</li>
+<li>搬运器：搬运保留内部物品的容器。</li>
+<li>末影箱节点：将末影箱接入物品运输流程。</li>
+<li>传送板与替代电梯板：用于基地内部短距离移动。</li>
+<li>扳手、多功能工具和强化采集工具：提高工厂维护与资源采集效率。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">使用提醒</p>
+<p>大型货运网络和大量持续运行的机器会增加服务器负载。建议把生产线分区建设，
+避免一个货运管理器连接过多设备，也不要让无用产物无限堆积。</p>
+</div>
+<p><strong>资料入口</strong></p>
+<ul>
+<li><a href="https://github.com/NCBPFluffyBear/FluffyMachines">英文项目仓库：FluffyMachines GitHub</a></li>
+<li><a href="https://github.com/Slimefun/Slimefun4/wiki/Cargo-Management">英文官方说明：Cargo Management</a></li>
+<li><a href="https://slimefun-addons-wiki.guizhanss.cn/fluffy-machines/">鬼斩中文 Wiki：蓬松机器</a></li>
+</ul>
+<h2 id="networks">仓储 · 网络化存储｜Networks<a class="headerlink" href="#networks" title="Permanent link">&para;</a></h2>
+<p>Networks 提供类似模组化科技中的中央仓储系统。玩家不必逐个翻找大量箱子，
+而是通过统一网络终端访问存储空间，并利用导入、导出节点让机器自动调用材料。</p>
+<h3 id="网络由什么组成">网络由什么组成<a class="headerlink" href="#网络由什么组成" title="Permanent link">&para;</a></h3>
+<h4 id="网络核心与控制部件">网络核心与控制部件<a class="headerlink" href="#网络核心与控制部件" title="Permanent link">&para;</a></h4>
+<p>维持网络运行并连接其他节点。不同版本的具体名称和连接限制以游戏内指南为准。</p>
+<h4 id="存储单元">存储单元<a class="headerlink" href="#存储单元" title="Permanent link">&para;</a></h4>
+<p>真正保存物品的部分。玩家可逐步增加容量，而不需要继续铺设成排普通箱子。</p>
+<h4 id="访问终端">访问终端<a class="headerlink" href="#访问终端" title="Permanent link">&para;</a></h4>
+<p>集中查看、搜索、存入和取出网络内物品，是日常使用的主要界面。</p>
+<h4 id="导入与导出节点">导入与导出节点<a class="headerlink" href="#导入与导出节点" title="Permanent link">&para;</a></h4>
+<p>将外部容器的物品送入网络，或按需求从网络取出特定物品供应机器。</p>
+<h3 id="基础搭建流程">基础搭建流程<a class="headerlink" href="#基础搭建流程" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>建立网络核心。</strong> 在基地仓库中心预留足够空间，避免后期扩建困难。</li>
+<li><strong>接入存储单元。</strong> 先存放常见原料和成品，再逐步扩容。</li>
+<li><strong>放置访问终端。</strong> 确认可以正常搜索、存入和取出物品。</li>
+<li><strong>配置导入节点。</strong> 将农场、矿场和工厂成品自动送入网络。</li>
+<li><strong>配置导出节点。</strong> 让自动机器从网络持续获得指定原料。</li>
+</ol>
+<h3 id="与货运系统的区别">与货运系统的区别<a class="headerlink" href="#与货运系统的区别" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>主要职责</th>
+<th>简单理解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Networks</td>
+<td>集中存储、搜索、调用和分配物品</td>
+<td>中央仓库</td>
+</tr>
+<tr>
+<td>Slimefun 货运系统</td>
+<td>在箱子和机器之间搬运物品</td>
+<td>传送带与物流线路</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>发展路线：</strong> 网络仓库 → 导出指定原料 → 自动机器加工 → 导入成品 → 重新存入网络</p>
+</blockquote>
+<div class="admonition info">
+<p class="admonition-title">适合存放的物品</p>
+<p>粉尘、合金、机器零件、导线、电路板、农作物、建筑材料以及其他数量较大的常用资源。</p>
+</div>
+<p><strong>资料入口</strong></p>
+<ul>
+<li><a href="https://github.com/Sefiraat/Networks">英文项目仓库：Networks GitHub</a></li>
+<li><a href="https://docs.sefiraat.dev/networks/">英文官方文档：Networks Documentation</a></li>
+<li><a href="https://slimefun-addons-wiki.guizhanss.cn/networks/">鬼斩中文 Wiki：Networks</a></li>
+</ul>
+<h2 id="route">推荐发展路线<a class="headerlink" href="#route" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主要目标</th>
+<th>推荐内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一阶段</td>
+<td>建立稳定电力</td>
+<td>生态能源、基础电容、分区电网</td>
+</tr>
+<tr>
+<td>第二阶段</td>
+<td>减少重复手工操作</td>
+<td>自动工作台、自动魔法工作台、基础货运</td>
+</tr>
+<tr>
+<td>第三阶段</td>
+<td>形成完整生产线</td>
+<td>自动远古祭坛、粉尘加工、成品回收</td>
+</tr>
+<tr>
+<td>第四阶段</td>
+<td>建设中央仓库</td>
+<td>Networks 核心、存储单元、访问终端</td>
+</tr>
+<tr>
+<td>第五阶段</td>
+<td>打通仓储与生产</td>
+<td>自动导入、自动导出、按需供料</td>
+</tr>
+</tbody>
+</table>
+<h2 id="faq">常见问题<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>这些扩展需要按固定顺序游玩吗？</summary>
+<p>不强制。玩家可以单独研究某一个附加，但按照“能源—生产—仓储”的路线发展会更顺畅。</p>
+</details>
+<details class="question">
+<summary>货运系统属于蓬松机器吗？</summary>
+<p>不属于。货运系统是 Slimefun4 本体提供的物品运输系统。蓬松机器只是让自己的许多机器能够接入这套系统。</p>
+</details>
+<details class="question">
+<summary>Networks 能完全代替货运系统吗？</summary>
+<p>不能简单理解为完全替代。Networks 更偏中央存储和按需调用；货运系统更偏机器与容器之间的物流。两者组合使用效果最好。</p>
+</details>
+<details class="question">
+<summary>为什么外部 Wiki 的名称和游戏内名称不同？</summary>
+<p>不同汉化版本、构建版本和服务器配置可能采用不同译名。查找配方和机器时，应优先使用服务器内粘液科技指南。</p>
+</details>
+<details class="question">
+<summary>机器为什么突然停止工作？</summary>
+<p>常见原因包括电力不足、输出槽堵塞、货运方向设置错误、网络超出连接范围、区块未加载或原料不符合配方。</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../updates/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 更新日志">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                更新日志
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      MCBBBS官方WIKI · QQ群：697112487
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
