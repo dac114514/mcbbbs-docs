@@ -1,0 +1,57 @@
+site_name: MCBBBS 玩家百科
+site_description: MCBBBS 粘液生存服务器玩家手册与粘液科技扩展玩法指南
+site_url: https://dac114514.github.io/mcbbbs-docs/
+repo_url: https://github.com/dac114514/mcbbbs-docs
+repo_name: dac114514/mcbbbs-docs
+
+nav:
+  - 玩家手册: index.md
+  - 粘液科技扩展: slimefun-addons.md
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.footer
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: MCBBBS 玩家向玩法说明 · 服务器规则、权限与价格以最新公告和游戏内配置为准
