@@ -6,7 +6,6 @@ repo_name: dac114514/mcbbbs-docs
 
 nav:
   - 玩家手册: index.md
-  - 粘液科技: slimefun.md
   - 回收商店价目表: recycle-prices.md
   - 更新日志: updates.md
   - 粘液科技扩展: slimefun-addons.md
@@ -57,4 +56,4 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
-copyright: MCBBBS官方WIKI · [官方群：697112487](mqqapi://card/show_pslcard?src_type=internal&version=1&uin=697112487&card_type=group&source=qrcode)
+copyright: MCBBBS官方WIKI · QQ群：697112487
